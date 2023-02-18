@@ -1,0 +1,212 @@
+:root{
+    --colora: #004643;
+    --colorb:#fffffe;
+    --colorc: #001e1d;
+    --colord: #f9bc60;
+    --colore: #abd1c6;
+    --colorf: #55423d;
+    
+}
+
+#navbar{
+    display: flex;
+    font-size: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--colorc); 
+    top: 0;
+    width: 100%;
+    background-color: var(--colora);
+    justify-content:center;
+    position: fixed;
+   
+}
+
+.nav-link{
+    display: flex;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        font-family:'Times New Roman', Times, serif;
+        background-color: var(--colora);
+        text-align: center;
+    }
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+   }
+
+.nav-link a{
+    text-decoration: none;
+    color: var(--colorb);
+    padding: 0 10px;
+}
+
+.nav-link a:hover{
+    text-decoration: underline;
+
+}
+
+section{
+    padding: 70px 0;
+    min-height: 100vh;
+}
+
+#welcome-section{
+    color: var(-colorb);
+    display: flex;
+    background-color: var( --colora);
+    flex-direction: column;
+}
+#welcome-section h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    margin-top: 30vh;   
+    
+}
+#welcome-section p{
+color: var(--colord);
+font-size: 25px;
+margin: 25px 0;
+font-style: italic;
+}
+
+#projects .Projects-section{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+width: 100%;
+row-gap: 4rem;
+    column-gap: 4rem;
+padding: 20px;
+margin: 0 auto;
+margin-bottom: 6rem;
+max-width: 1280px;
+place-items: center;
+
+
+}
+
+#projects{
+    background-color: var(--colore);
+    color: var(--colora);
+}
+
+#projects h1{
+    border-bottom: 5px solid var(--colora);
+    width: fit-content;
+    margin: auto;
+    font-size: 40px;
+}
+
+
+#projects .project-tile{
+    width: 100%;
+    height: 525px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colora);
+    color: var(--colore);
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.3);
+    text-decoration: none;
+    padding: 10px;
+
+}
+#projects .project-tile img{
+    
+height: 100%;
+width: 100%;
+object-fit: cover;
+
+}
+#projects .project-tile p{
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+#projects .project-tile span {
+    opacity: 0%;
+    padding: 0 5px;
+    }
+#projects .project-tile:hover span{
+    opacity: 100%;
+    color: var(--colord);
+    transition: opacity 0.25s ease-in;
+    
+}
+.show-all{
+    text-decoration: none;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    margin: auto;
+    padding: 0 15px;
+    background-color: var(--colora);
+    font-size: 25px;
+    color: var(--colorb);
+    transition: background-color 0.2s ease-out;
+}
+
+.show-all:hover{
+    /*background-color: var(--colorc);*/
+    color: var(--colorc);
+    box-shadow: inset -10.5em 0 0 0 #e9e1e2, inset 10.5em 0 0 0 #e9e1e2;
+}
+#Contact-section{
+    background-color: var(--colora);
+    color: var(--colorb);
+
+}
+#Contact-section h1{
+    margin-top: 200px;
+    font-size: 60px;
+} 
+#Contact-section .coffee-question{
+    font-size: 25px;
+    font-style: italic;
+    color: var(--colord);
+    margin: 5vh;
+    
+}
+#Contact-section .social-media-segment{
+display:flex;
+flex-wrap: wrap;
+max-width: 1000px;
+justify-content: space-around;
+margin-top: 30px;
+margin: auto;
+}
+#Contact-section .social-media{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin: 20px;
+    text-decoration: none;
+    color: var(--colorb);
+    transition: transform 0.2s ease-in;
+}
+#Contact-section .social-media:hover{
+    transform: translateY(10px);
+    transition-delay: smooth 0ms;
+    
+
+}
+footer{
+    border-top: 3px solid var(--colord);
+    color: var(--colorb);
+font-size: 25px;
+padding: 30px;
+}
+@media only screen and (width < 700px) {
+    h1{
+        font-size: 50px;
+    }
+}
+/*#projects .project-tile{
+    width: 600px;
+    height: 100%;
+}*/
